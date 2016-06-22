@@ -11,6 +11,18 @@
 </trans-unit>
 ```
 
+###Method0
+
+``SMTP_Send``または``SMTP_QuickSend``で普通に標準テキストメールを送信します。
+
+###Method1
+
+``SMTP_Send``または``SMTP_QuickSend``で普通にHTMLメール（添付ファイル付き）を送信します。
+
+###Method3
+
+``SMTP_QuickSend``でHTMLメール（添付ファイル付き）を送信します。
+
 ##OAUTH2の例
 
 **注記**: GoogleのAPIキーは``Resources/api-private.xlf``に記述してください。
@@ -25,3 +37,19 @@
   </trans-unit>
 </group>
 ```
+
+###Step1
+
+ブラウザを起動して認証コードを取得します。
+
+###Step2
+
+認証コードを使用してアクセス/リフレッシュトークンを取得します。
+
+###Step3
+
+アクセストークンを使用してメールを送信します。
+
+###Step4
+
+リフレッシュトークンを使用してメールを送信します。
