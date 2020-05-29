@@ -1,55 +1,52 @@
-# 4d-tips-google-mail
-4D v15でGmail (OAuth2) を送信する例題です。
+4d-tips-google-mail
 
-##単純なSMTPの例
+This is an example of sending Gmail (OAuth2) with 4D v15.
 
-**注記**: Gmailのパスワードは``Resources/accounts-private.xlf``に記述してください。
+## Simple SMTP example
 
-```xml
-<trans-unit d4:value="ここ" id="A443DC2BB7DA4D1B83919BC64966856E.2">
-  <source>Account password for Gmail</source>
-</trans-unit>
-```
+Note: Please write your Gmail password in Resources / accounts-private.xlf.
 
-###Method0
+<trans-unit d4: value = "here" id = "A443DC2BB7DA4D1B83919BC64966856E.2">
+  <source> Account password for Gmail </ source>
+</ trans-unit>
 
-``SMTP_Send``または``SMTP_QuickSend``で普通に標準テキストメールを送信します。
+### Method0
 
-###Method1
+Send standard text emails normally with SMTP_Send or SMTP_QuickSend.
 
-``SMTP_Send``または``SMTP_QuickSend``で普通にHTMLメール（添付ファイル付き）を送信します。
+### Method1
 
-###Method3
+Send HTML mail (with attachment) as usual with SMTP_Send or SMTP_QuickSend.
 
-``SMTP_QuickSend``でHTMLメール（添付ファイル付き）を送信します。
+### Method3
 
-##OAUTH2の例
+Send an HTML mail (with attachment) with SMTP_QuickSend.
 
-**注記**: GoogleのAPIキーは``Resources/api-private.xlf``に記述してください。
+## OAUTH2 example
 
-```xml
-<group d4:groupName="60670566F9714E2588CB0F737EF578F5" restype="x-4DK#">
-  <trans-unit d4:value="ここ" id="60670566F9714E2588CB0F737EF578F5.1">
-    <source>Gmail client ID</source>
-  </trans-unit>
-  <trans-unit d4:value="ここ" id="60670566F9714E2588CB0F737EF578F5.2">
-    <source>Gmail client secret</source>
-  </trans-unit>
-</group>
-```
+Note: Please describe Google API key in Resources / api-private.xlf.
 
-###Step1
+<group d4: groupName = "60670566F9714E2588CB0F737EF578F5" restype = "x-4DK #">
+  <trans-unit d4: value = "here" id = "60670566F9714E2588CB0F737EF578F5.1">
+    <source> Gmail client ID </ source>
+  </ trans-unit>
+  <trans-unit d4: value = "here" id = "60670566F9714E2588CB0F737EF578F5.2">
+    <source> Gmail client secret </ source>
+  </ trans-unit>
+</ group>
 
-ブラウザを起動して認証コードを取得します。
+### Step1
 
-###Step2
+Start your browser and get the authorization code.
 
-認証コードを使用してアクセス/リフレッシュトークンを取得します。
+### Step2
 
-###Step3
+Use the authorization code to get an access / refresh token.
 
-アクセストークンを使用してメールを送信します。
+### Step3
 
-###Step4
+Use the access token to send the email.
 
-リフレッシュトークンを使用してメールを送信します。
+### Step4
+
+Send the email using the refresh token.
