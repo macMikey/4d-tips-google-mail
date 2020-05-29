@@ -1,0 +1,47 @@
+﻿{
+	"ASCII": {
+		"methods": [
+			"ASCII_Convert",
+			"ASCII_Convert_file_name",
+			"ASCII_Convert_header",
+			"ASCII_Encode_header"
+		]
+	},
+	"BASE64": {
+		"methods": [
+			"BASE64_Convert",
+			"BASE64_Convert_file_name",
+			"BASE64_Convert_header",
+			"BASE64_Encode_header"
+		]
+	},
+	"MIME": {
+		"methods": [
+			"MIME_ADD_ALTERNATIVE_PART",
+			"MIME_ADD_HEADER",
+			"MIME_ADD_PART",
+			"MIME_Export_headers",
+			"MIME_Export_to_variable",
+			"MIME_New",
+			"MIME_SET_BODY",
+			"MIME_SET_OPTION"
+		]
+	},
+	"OAuth 2.0": {
+		"methods": [
+			"Step1",
+			"Step2",
+			"Step3",
+			"Step4"
+		]
+	},
+	"Utilities": {
+		"methods": [
+			"File_name",
+			"Get_resource_image",
+			"Trim",
+			"URL_Escape"
+		]
+	},
+	"trash": {}
+}
